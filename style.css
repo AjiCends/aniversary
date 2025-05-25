@@ -1,0 +1,14 @@
+body {
+    background: linear-gradient(to bottom, #ffe2e2, #ffc1c1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+    color: #b30000;
+}
+
+#landing-page,
+#next-page {
+    transition: opacity 1s ease;
+}
