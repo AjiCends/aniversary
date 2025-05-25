@@ -19,13 +19,12 @@
 
 </head>
 
-<body>
+<body class="noscroll">
 
     <section id="cover" class="position-relative vh-100 text-white overflow-hidden">
         <!-- Background -->
         <div class="position-absolute top-0 start-0 w-100 h-100">
-            <div class="bg-cover bg-center h-100"
-                style="background-image: url('https://placehold.co/1200x1800?text=Cover+Photo');">
+            <div class="bg-cover bg-center h-100" style="background-image:url('images/cover.jpg');">
             </div>
 
             <!-- Top gradient overlay -->
@@ -40,7 +39,7 @@
         </div>
 
         <!-- Top Title -->
-        <div class="position-absolute top-0 w-100 text-center mt-4 z-3">
+        <div class="position-absolute top-0 w-100 text-center mt-5 z-3">
             <h1 class="animate__animated animate__fadeInDown title-elegant">Happy Anniversary</h1>
         </div>
 
@@ -56,23 +55,48 @@
     <audio id="bg-music" src="audio/love_you.mp3" preload="auto"></audio>
 
 
-
     <section id="quote" class="position-relative text-white"
-        style="background: url('https://placehold.co/800x1200') no-repeat center center/cover; min-height: 100vh;">
-        <div class="container d-flex flex-column justify-content-center align-items-center text-center"
-            style="min-height: 100vh;">
-            <p class="fs-5 fst-italic px-4" style="max-width: 600px;">
-                "Bukan tentang seberapa lama kita bersama, tapi tentang bagaimana setiap detik bersamamu selalu terasa
-                pertama kali jatuh cinta."
-            </p>
+        style="background: url('images/quote.jpg') no-repeat center center/cover; min-height: 100vh;">
 
-            <div class="mt-5">
-                <div class="border-top pt-2">
-                    <strong>Minggu, 25 November 2025</strong>
+        <!-- Overlay blur -->
+        <div style="
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;">
+        </div>
+
+        <!-- Card bergaya kaca -->
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center"
+            style="min-height: 100vh; position: relative; z-index: 2;">
+
+            <div class="p-4 rounded-4" style="
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            max-width: 700px;
+        ">
+                <p class="fs-5 fst-italic mb-4">
+                    "Bukan soal udah berapa lama kita bareng, tapi gimana tiap momen sama bby tuh selalu kerasa kayak
+                    jatuh cinta sekali lagi."
+                </p>
+
+                <div class="border-top pt-2 d-flex justify-content-center">
+                    <span style="font-size: 2rem; color: red;">&#10084;&#65039;</span>
                 </div>
+
             </div>
         </div>
+
+        <div class="position-absolute bottom-0 w-100 text-center z-3" style="margin-bottom: 12vh;">
+            <a href="#galleries" class="btn btn-outline-light px-4 mt-2 animate__animated animate__fadeInUp">Tap</a>
+        </div>
     </section>
+
 
     <section id="galleries" class="editable background-secondary" style="min-height: 100vh;">
         <div class="container-fluid h-100 d-flex flex-column justify-content-center">
@@ -85,9 +109,8 @@
                     </div>
                     <div class="movequote background-primary p-1 mt-3 wow animate__animated animate__fadeInUp">
                         <p class="color-fourth font-title">
-                            "Creating memories is a priceless gift. Memories last a lifetime; objects last only a short
-                            time."<br>
-                            <small>*title and words can be edited in the gallery menu</small>
+                            "Ke mana pun kita pergi, apa pun yang kita lakuin bareng—semua jadi kenangan manis yang
+                            ngebentuk cerita kita sampai hari ini."
                         </p>
                     </div>
                 </div>
@@ -98,60 +121,240 @@
 
                     <!-- Item 1 -->
                     <div class="item">
-                        <a data-fancybox="gallery_small"
-                            href="https://api.our-wedding.link/uploads/29a18720-e7fc-11ed-98be-b566ca689cd2.jpg">
-                            <img src="https://api.our-wedding.link/uploads/29a18720-e7fc-11ed-98be-b566ca689cd2.jpg"
-                                alt="photo" class="img-fluid rounded mb-3">
+                        <a data-fancybox="gallery_small" href="images/memories/img_mrs_first_date.jpeg">
+                            <img src="images/memories/img_mrs_first_date.jpeg" alt="photo"
+                                class="img-fluid rounded mb-3">
                         </a>
                         <div class="story-container">
                             <div class="vertical-line"></div>
                             <div class="story-content">
-                                <h3 class="story-title">Judul Cerita 1</h3>
-                                <p class="story-description">Deskripsi singkat tentang gambar pertama ini yang
-                                    menjelaskan moment berharga tersebut.</p>
+                                <h3 class="story-title">First Date</h3>
+                                <p class="story-description">Waktu itu kita pertama kali ketemu face to face, hihi. ini
+                                    jadi foto pertama kita.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="item">
-                        <a data-fancybox="gallery_small"
-                            href="https://api.our-wedding.link/uploads/2a338df0-e7fc-11ed-b2db-9ff0c0d42cfe.jpg">
-                            <img src="https://api.our-wedding.link/uploads/2a338df0-e7fc-11ed-b2db-9ff0c0d42cfe.jpg"
-                                alt="photo" class="img-fluid rounded mb-3">
+                        <a data-fancybox="gallery_small" href="images/memories/first_movies.jpeg">
+                            <img src="images/memories/first_movies.jpeg" alt="photo" class="img-fluid rounded mb-3">
                         </a>
                         <div class="story-container">
                             <div class="vertical-line"></div>
                             <div class="story-content">
-                                <h3 class="story-title">Judul Cerita 2</h3>
-                                <p class="story-description">Cerita singkat tentang gambar kedua ini yang punya arti
-                                    spesial juga.</p>
+                                <h3 class="story-title">First Movie</h3>
+                                <p class="story-description">Kita pertama nonton, tapi yang ditonton ipar adalah maut,
+                                    wkwk</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Item 3 -->
                     <div class="item">
-                        <a data-fancybox="gallery_small"
-                            href="https://api.our-wedding.link/uploads/2a338df0-e7fc-11ed-b2db-9ff0c0d42cfe.jpg">
-                            <img src="https://api.our-wedding.link/uploads/2a338df0-e7fc-11ed-b2db-9ff0c0d42cfe.jpg"
-                                alt="photo" class="img-fluid rounded mb-3">
+                        <a data-fancybox="gallery_small" href="images/memories/dimsum_date.jpeg">
+                            <img src="images/memories/dimsum_date.jpeg" alt="photo" class="img-fluid rounded mb-3">
                         </a>
                         <div class="story-container">
                             <div class="vertical-line"></div>
                             <div class="story-content">
-                                <h3 class="story-title">Judul Cerita 3</h3>
-                                <p class="story-description">Cerita singkat tentang gambar kedua ini yang punya arti
-                                    spesial juga.</p>
+                                <h3 class="story-title">Dimsum Date</h3>
+                                <p class="story-description">Makan dimsum di emperan, kayaknya ini pertama kamu aku
+                                    bonceng pakai motorku</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Tambah item sesuai kebutuhan -->
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/cafe_senja.jpeg">
+                            <img src="images/memories/cafe_senja.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Cafe Senja</h3>
+                                <p class="story-description">Kita ke cafe senja, aku lumayan sibuk waktu itu, kamu
+                                    temenin aku ngoding.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/ultah_aji.jpeg">
+                            <img src="images/memories/ultah_aji.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Birth Day</h3>
+                                <p class="story-description">Makasih udah se effort itu bby, parfumnya jadi parfum
+                                    favorit akuu.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/olga_perdana.jpeg">
+                            <img src="images/memories/olga_perdana.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Olah Raga</h3>
+                                <p class="story-description">Olahraga pertama kitaa, dan belum lanjut lagi sampai
+                                    sekarangg &#x1F62D;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/lesehan.jpeg">
+                            <img src="images/memories/lesehan.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Makan Warles</h3>
+                                <p class="story-description">Kamu tak ajak makan di warung lesehan depan unejj, waktu
+                                    itu rasanya happy banget kamu mau tak ajak ke sana.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/photo_booth.jpeg">
+                            <img src="images/memories/photo_booth.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Photo Booth</h3>
+                                <p class="story-description">Akhirnya ga jadi wacana ya kita bisa foto bareng di
+                                    photobooth..</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/ke_camer.jpeg">
+                            <img src="images/memories/ke_camer.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Aku, Kamu, Ibuk</h3>
+                                <p class="story-description">Masih inget kamu kepikiran terus mau ketemu ibuk, sampai
+                                    kebawa mimpi weh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/konser_pertama.jpeg">
+                            <img src="images/memories/konser_pertama.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Konser Pertama</h3>
+                                <p class="story-description">Makasih ya udah nemenin nonton Hindia sama Hal walaupun
+                                    mostly kamu ga tau lagunya wkwk.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/konser_kedua.jpeg">
+                            <img src="images/memories/konser_kedua.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Konser Kedua</h3>
+                                <p class="story-description">Kita seniat itu mau lihat konser Sheila on 7, kita terjang
+                                    mancet dan hujan selama berjam-jam.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/ultah_bby.jpeg">
+                            <img src="images/memories/ultah_bby.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Ultah Bby</h3>
+                                <p class="story-description">Selamat ulang tahun bby, wish you all the best deh
+                                    pokoknyaaaaa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <a data-fancybox="gallery_small" href="images/memories/thankyouu.jpeg">
+                            <img src="images/memories/thankyouu.jpeg" alt="photo" class="img-fluid rounded mb-3">
+                        </a>
+                        <div class="story-container">
+                            <div class="vertical-line"></div>
+                            <div class="story-content">
+                                <h3 class="story-title">Thankyuu Bby</h3>
+                                <p class="story-description">Makasih ya bby udah nemenin satu tahun iniii</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="thankyou" class="min-vh-100 d-flex align-items-center justify-content-center text-center px-4"
+        style="position: relative; overflow: hidden; background: url('images/sky_bear.jpg') no-repeat center center/cover; min-height: 100vh;">
+
+        <!-- Background image transparan -->
+        <div style="
+        position: absolute;
+        inset: 0;
+        background: url('images/thankyou-bg.jpg') no-repeat center center/cover;
+        opacity: 0.3;
+        z-index: 1;
+    "></div>
+
+        <!-- Overlay blur untuk efek kaca -->
+        <div style="
+        position: absolute;
+        inset: 0;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background-color: rgba(10, 37, 64, 0.6);
+        z-index: 2;
+    "></div>
+
+        <!-- Konten teks dengan style kaca -->
+        <div style="position: relative; z-index: 3; max-width: 700px; width: 100%;">
+            <div style="
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 2rem 2.5rem;
+        ">
+                <h1 class="font-title display-4 mb-3"
+                    style="font-family: 'Playfair Display', serif; color: #F3E8FF; letter-spacing: 1px;">
+                    Thank You
+                </h1>
+                <p class="font-additional lead"
+                    style="font-family: 'Cormorant Garamond', serif; color: #D6DCE5; font-size: 1.25rem;">
+                    Anniversary kali ini aku pengen bilang makasih banget ya bby, kamu selalu ada dan bikin hidup aku
+                    lengkap dengan cinta.
+                </p>
+            </div>
+        </div>
+    </section>
+
 
 
 
@@ -180,6 +383,9 @@
         function playMusic() {
             const music = document.getElementById("bg-music");
             music.play();
+
+            document.body.classList.remove('noscroll');
+            btn.style.display = 'none'; // Sembunyikan tombol setelah aktifkan scroll
         }
     </script>
 </body>
