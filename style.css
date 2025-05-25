@@ -1,14 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background: linear-gradient(to bottom, #ffe2e2, #ffc1c1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fefefe;
 }
 
-h1,
-h2 {
-    color: #b30000;
+.bg-cover {
+    background-size: cover;
 }
 
-#landing-page,
-#next-page {
-    transition: opacity 1s ease;
+.bg-center {
+    background-position: center;
+}
+
+.title-elegant {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.name-pair {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.date-text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+/* galerry */
+
+/* Owl carousel item: lebar 80% layar untuk item aktif */
+#gallery-slider .owl-item {
+    flex: 0 0 80%;
+    margin-right: 20px;
+}
+
+/* Gambar dalam item */
+#gallery-slider .item img {
+    height: 60vh;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Container untuk story di bawah gambar */
+.story-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 0 10px 10px 10px;
+}
+
+/* Garis vertikal */
+.vertical-line {
+    width: 3px;
+    background-color: #6c757d;
+    /* warna abu-abu */
+    height: 60px;
+    border-radius: 1.5px;
+    margin-top: 5px;
+}
+
+/* Konten cerita */
+.story-content {
+    flex: 1;
+}
+
+/* Judul cerita */
+.story-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #343a40;
+}
+
+/* Deskripsi cerita */
+.story-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.3;
+}
+
+/* Gambar di atas tetap sama styling-nya */
+#gallery-slider .item img {
+    height: 50vh;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Elegant font untuk "Precious moment" */
+.title-gallery h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: #2c3e50;
+    /* warna gelap elegan */
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin-bottom: 0.3rem;
+    line-height: 1.1;
+    font-style: italic;
+}
+
+.title-gallery .title-child {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: #7f8c8d;
+    /* abu-abu elegan */
+    text-transform: lowercase;
+    font-style: normal;
+    letter-spacing: 0.08em;
+}
+
+/* Elegant untuk judul cerita */
+.story-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #34495e;
+    /* warna gelap tapi lembut */
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-style: normal;
 }
